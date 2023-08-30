@@ -1,0 +1,78 @@
+/* Authentication.css */
+.Myauth {
+    background: linear-gradient(to bottom, #2832f4, #71766c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+  }
+  
+  .auth-card {
+    background-color: #bbf3b8;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .auth-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .auth-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .auth-button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .auth-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .auth-toggle {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .toggle-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+    font-size: 14px;
+  }
+  
+  /* Animation for sliding up */
+  .auth-card.success {
+    animation: slideUp 0.5s ease-in-out;
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
