@@ -11,7 +11,8 @@ export default function Authentication({ setToken, setLoginUsername }) {
   const [signUpSuccess, setSignUpSuccess] = useState(false);
 
   // const defaultBackendURL="http://localhost:5000";
-  const renderBackendURL="https://harekrishna.onrender.com"
+  const renderBackendURL="https://harekrishna.onrender.com";
+  // const renderBackendURL = "http://localhost:5000";
 
   const handleSignUp = async () => {
     try {

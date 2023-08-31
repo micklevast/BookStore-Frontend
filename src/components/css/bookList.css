@@ -32,6 +32,8 @@
 .signout-button:hover {
   animation: bounce 0.5s ease infinite;
 }
+/* --------- */
+
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
@@ -43,4 +45,128 @@
   60% {
     transform: translateY(-5px);
   }
+}
+
+/* ------------- */
+/* styles.css */
+
+.book-list {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-item {
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.book-item:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.02);
+}
+
+.book-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-table th,
+.book-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+.book-table th {
+  background-color: #f0f0f0;
+}
+
+/* Responsive adjustments */
+
+@media screen and (max-width: 768px) {
+  .book-list,
+  .book-item {
+    padding: 10px;
+  }
+  
+  .book-table th,
+  .book-table td {
+    padding: 8px;
+  }
+  
+  .book-list {
+    margin-top: 10px;
+  }
+}
+/* styles.css */
+
+/* ... Other styles ... */
+
+.book-list {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Set default width */
+}
+
+/* Responsive adjustments */
+
+@media screen and (max-width: 390px) {
+  .book-list {
+    width: 100vw; /* Take the entire width of the viewport */
+    padding: 1px; /* Adjust padding for smaller screens */
+  }
+  
+  .book-item {
+    padding: 1px; /* Adjust padding for smaller screens */
+  }
+  
+  .book-table th,
+  .book-table td {
+    padding: 2px; /* Adjust padding for smaller screens */
+  }
+  
+  .book-list {
+    margin-top: 5px; /* Adjust margin for smaller screens */
+  }
+}
+
+.book-actions-cell {
+  display: flex;
+  justify-content: space-between;
+}
+
+.update-button,
+.delete-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  margin-right: 8px;
+  border-radius: 4px;
+}
+
+.update-button:hover,
+.delete-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button {
+  background-color: #dc3545;
+}
+
+.delete-button:hover {
+  background-color: #bd2130;
 }

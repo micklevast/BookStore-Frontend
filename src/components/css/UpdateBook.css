@@ -1,0 +1,86 @@
+/* UpdateBook.css */
+.update-book-form {
+    background-color: #bfbcbc;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .update-book-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333333;
+    text-align: center;
+  }
+  
+  .update-book-input {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    color: #333333;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .update-book-input:focus {
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+  }
+  
+  .update-buttons-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .update-button,
+  .delete-button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .update-button {
+    background-color: #007bff;
+    color: #ffffff;
+    margin-right: 5px;
+  }
+  
+  .update-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+    color: #ffffff;
+    margin-left: 5px;
+  }
+  
+  .delete-button:hover {
+    background-color: #bd2130;
+  }
+  
+  .update-message {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #007bff;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .update-buttons-container {
+      flex-direction: column;
+    }
+  
+    .update-button,
+    .delete-button {
+      margin: 5px 0;
+    }
+  }
+  

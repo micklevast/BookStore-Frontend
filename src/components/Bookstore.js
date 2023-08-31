@@ -7,7 +7,8 @@ export default function Bookstore() {
   const [token, setToken] = useState('');
   const [books, setBooks] = useState([]);
   const [loginUserName,setLoginUsername]=useState("default")
-  const renderBackendURL="https://harekrishna.onrender.com"
+  const renderBackendURL="https://harekrishna.onrender.com";
+  // const renderBackendURL = "http://localhost:5000";
 
   useEffect(() => {
     // Check for existing token in cookies and setToken
@@ -45,7 +46,7 @@ export default function Bookstore() {
         <div>
           {/* Bookstore content when authenticated */}
 
-          <BookList books={books} loginUserName={loginUserName} setToken={setToken}/>
+          <BookList fetchBooks={fetchBooks} books={books} loginUserName={loginUserName} setToken={setToken}/>
         </div>
       ) : (
         <div>
@@ -56,4 +57,3 @@ export default function Bookstore() {
     </div>
   );
 }
-
